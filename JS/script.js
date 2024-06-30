@@ -35,7 +35,9 @@
                 ideal: 720,
                 max: 1080
             },
-            facingMode: 'environment'
+            facingMode: {
+                ideal: 'environment'
+            }
         }
     }
 
