@@ -29,7 +29,7 @@
     }
     #image-stream-container {
         width: 100vw;
-        height: 85dvh;
+        height: 500px;
         position: relative;
     }
     #cam-video {

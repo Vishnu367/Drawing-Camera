@@ -24,15 +24,25 @@
     })
 
     const sreamContrains = {
-            width: {min:319, max:500},
-            height: 720,
-            facingMode: 'environment',
+        video: {
+            width: {
+                min: 640,
+                ideal: 1280,
+                max: 1920
+            },
+            height: {
+                min: 480,
+                ideal: 720,
+                max: 1080
+            }
+        }
     }
 
     camStartBtn.addEventListener('click', async () => {
        try {
-        stream = await navigator.mediaDevices.getUserMedia({video: sreamContrains})
+        stream = await navigator.mediaDevices.getUserMedia(sreamContrains)
         video.srcObject = stream
+        video.style.height = '700px'
        } catch (error) {
             alert(error)
        }
