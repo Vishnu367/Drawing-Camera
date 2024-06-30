@@ -25,7 +25,7 @@
 
     const sreamContrains = {
             width: {min:319, max:500},
-            height: {exact: 720},
+            height: 720,
             facingMode: 'environment',
     }
 
