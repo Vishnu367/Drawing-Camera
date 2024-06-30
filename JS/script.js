@@ -24,9 +24,9 @@
     })
 
     const sreamContrains = {
-            facingMode: environment,
             width: {min:319, max:500},
-            height: {min:400,exact:700, max:1500},
+            height: {exact: 720},
+            facingMode: 'environment',
     }
 
     camStartBtn.addEventListener('click', async () => {
